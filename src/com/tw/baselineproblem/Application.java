@@ -12,7 +12,7 @@ public class Application {
 
     public void startApplication() {
         String Items = console.getInput();
-        receiptGenerator.printReceipt(Items);
+        receiptGenerator.printReceipt(Items,console);
     }
 
 }

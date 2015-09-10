@@ -13,7 +13,7 @@ public class ReceiptGenerator {
 
     }
 
-    public void calculateTotalCost(String exemptedItems) {
+    public Double calculateTotalCost(String exemptedItems) {
         String[] listOfItems = exemptedItems.split("\n");
         for (String str : listOfItems) {
             listOfSplitedItems.add(str.split(" "));
@@ -21,6 +21,7 @@ public class ReceiptGenerator {
         for (String[] strings : listOfSplitedItems) {
             totalCost += new Double(strings[strings.length - 1]);
         }
+        return totalCost;
     }
 
 }
