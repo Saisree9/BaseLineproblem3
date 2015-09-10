@@ -10,10 +10,10 @@ public class ReceiptGeneratorTest {
     @Test
     public void shouldGenerateReceiptForExemptedItem() {
         ReceiptGenerator receiptGenerator = new ReceiptGenerator();
-        String exemptedItems = "1 book at 12,49\n";
+        String exemptedItems = "1 book at 12.49\n";
         Console console = mock(Console.class);
         receiptGenerator.printReceipt(exemptedItems, console);
-        verify(console).display("1 book at 12,49\nSalesTax:0.00\ntotalCost:12.49");
+        verify(console).display("1 book at 12.49\nSalesTax:0.00\ntotalCost:12.49");
     }
     @Test
     public void shouldCalculateTotalCostOfExemptedItems(){

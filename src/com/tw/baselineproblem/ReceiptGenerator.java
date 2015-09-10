@@ -9,7 +9,7 @@ public class ReceiptGenerator {
 
     public void printReceipt(String exemptedItems, Console console) {
         calculateTotalCost(exemptedItems);
-        console.display(exemptedItems + "SalesTax:0.00" + "totalCost:" + totalCost);
+        console.display(exemptedItems + "SalesTax:0.00" +"\n"+ "totalCost:" + totalCost);
 
     }
 
