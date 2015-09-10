@@ -8,7 +8,7 @@ public class Console {
         return scanner.nextLine();
     }
 
-    public void display(String receipt){
+    public void display(String receipt) {
         System.out.println(receipt);
     }
 }
