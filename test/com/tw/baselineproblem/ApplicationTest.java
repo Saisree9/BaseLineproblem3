@@ -13,6 +13,7 @@ public class ApplicationTest {
         ReceiptGenerator receiptGenerator = new ReceiptGenerator();
         Application application = new Application(console, receiptGenerator);
         application.startApplication();
+
         verify(console).getInput();
     }
 
